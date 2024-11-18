@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.midimg{
+    width: 400px    ;
+    height: 350px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #e3fc06;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+.logout{
+    display: flex;
+    gap: 10px;
+    color: #e3fc06;
+}
+
+
+.login input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.login button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #218838;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #007bff;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: rgb(249, 253, 0);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px; /* Add some space below the copyright */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links li a:hover {
+    color: #ddd;
+}
+
+/* Responsive Footer for Small Screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%; /* Full-height: 100% of the screen */
+    width: 0; /* Initial width is 0 */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Dark background */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Space from top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #e3fc06;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Responsive Sidebar for Small Screens */
+@media (max-width: 768px) {
+    .sidebar a {
+        font-size: 18px;
+    }
+    .openbtn {
+        font-size: 18px;
+    }
+}
